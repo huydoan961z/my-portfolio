@@ -66,11 +66,7 @@ portfolio/
 
 MIT License
 
-## 📧 Contact
 
-- **Email:** lekhanhduc212003@gmail.com
-- **GitHub:** [lekhanhduc](https://github.com/lekhanhduc)
-- **Facebook:** [Le Khanh Duc](https://www.facebook.com/profile.php?id=100028989917543)
 
 ---
 
