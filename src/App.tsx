@@ -22,14 +22,14 @@ function App() {
           <Preloader onComplete={() => setIsLoading(false)} />
         )}
       </AnimatePresence>
-      
+
       {!isLoading && (
         <div className="relative z-0">
           <Navbar />
           <Hero />
           <About />
           <Skills />
-          <Work />
+          {/* <Work /> */}
           <Contact />
           <Footer />
         </div>
