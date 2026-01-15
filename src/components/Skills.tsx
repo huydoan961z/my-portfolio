@@ -5,7 +5,7 @@ import {
   SiReact, SiNextdotjs, SiGit, SiPostman,
   SiSwagger, SiSonarqube, SiJsonwebtokens, SiSocketdotio,
   SiAmazonec2, SiAwselasticloadbalancing, SiAwslambda, SiAmazons3, SiAmazoniam,
-  SiSharp, SiDotnet
+  SiDotnet
 } from "react-icons/si";
 import { FaJava, FaAws, FaShieldAlt, FaKey, FaCloud, FaDatabase, FaRobot } from "react-icons/fa";
 import { useTheme } from "../context/ThemeContext";
@@ -18,7 +18,7 @@ const Skills = () => {
       title: "Backend",
       color: "from-orange-500 to-red-500",
       skills: [
-        { name: "C#", icon: <SiSharp />, iconColor: "text-blue-600" },
+        { name: "C#", icon: <SiDotnet />, iconColor: "text-blue-600" },
         { name: ".NET", icon: <SiDotnet />, iconColor: "text-purple-600" },
         { name: "Java", icon: <FaJava />, iconColor: "text-orange-500" },
         { name: "Spring Boot", icon: <SiSpring />, iconColor: "text-green-500" },
