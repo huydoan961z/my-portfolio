@@ -92,7 +92,7 @@ const Preloader = ({ onComplete }: PreloaderProps) => {
                 }}
                 className="absolute inset-0 bg-primary/30 rounded-full blur-xl"
               />
-              
+
               {/* Icon */}
               <motion.div
                 animate={{
@@ -157,7 +157,7 @@ const Preloader = ({ onComplete }: PreloaderProps) => {
               d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
             />
           </svg>
-          <span className="text-sm md:text-base">duc.javabuilder.online</span>
+          <span className="text-sm md:text-base">huy.javabuilder.online</span>
         </motion.div>
 
         {/* Progress bar */}
@@ -183,7 +183,7 @@ const Preloader = ({ onComplete }: PreloaderProps) => {
               />
             </motion.div>
           </div>
-          
+
           {/* Progress percentage */}
           <motion.div
             className="text-center mt-3 text-primary/80 text-sm font-medium"

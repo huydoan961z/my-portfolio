@@ -1,22 +1,25 @@
 import { motion } from "framer-motion";
-import { 
+import {
   SiSpring, SiPostgresql, SiMysql, SiRedis, SiElasticsearch,
   SiDocker, SiJenkins, SiApachekafka, SiPrometheus, SiGrafana,
   SiReact, SiNextdotjs, SiGit, SiPostman,
   SiSwagger, SiSonarqube, SiJsonwebtokens, SiSocketdotio,
-  SiAmazonec2, SiAwselasticloadbalancing, SiAwslambda, SiAmazons3, SiAmazoniam
+  SiAmazonec2, SiAwselasticloadbalancing, SiAwslambda, SiAmazons3, SiAmazoniam,
+  SiCsharp, SiDotnet
 } from "react-icons/si";
 import { FaJava, FaAws, FaShieldAlt, FaKey, FaCloud, FaDatabase, FaRobot } from "react-icons/fa";
 import { useTheme } from "../context/ThemeContext";
 
 const Skills = () => {
   const { theme } = useTheme();
-  
+
   const skillCategories = [
     {
       title: "Backend",
       color: "from-orange-500 to-red-500",
       skills: [
+        { name: "C#", icon: <SiCsharp />, iconColor: "text-blue-600" },
+        { name: ".NET", icon: <SiDotnet />, iconColor: "text-purple-600" },
         { name: "Java", icon: <FaJava />, iconColor: "text-orange-500" },
         { name: "Spring Boot", icon: <SiSpring />, iconColor: "text-green-500" },
         { name: "Spring Data JPA", icon: <FaDatabase />, iconColor: "text-green-500" },
@@ -100,9 +103,9 @@ const Skills = () => {
       ],
     },
   ];
-  
+
   const titleClass = theme === "dark" ? "text-white" : "text-slate-800";
-  
+
   return (
     <section id="skills" className="py-24 relative flex justify-center">
       <div className="w-full max-w-6xl px-8 sm:px-12 lg:px-16">

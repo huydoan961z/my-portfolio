@@ -25,6 +25,8 @@ export const socials = [
 
 export const skills = {
   backend: [
+    { name: "C#", icon: "csharp" },
+    { name: ".NET", icon: "dotnet" },
     { name: "Java", icon: "java" },
     { name: "Spring Boot", icon: "spring" },
     { name: "Hibernate", icon: "hibernate" },
