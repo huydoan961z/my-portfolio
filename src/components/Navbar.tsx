@@ -38,18 +38,18 @@ const Navbar = () => {
                   <stop offset="100%" stopColor="#3b82f6" />
                 </linearGradient>
               </defs>
-              <polygon 
-                points="50,2 95,25 95,75 50,98 5,75 5,25" 
-                fill="none" 
-                stroke="url(#hexGradient)" 
+              <polygon
+                points="50,2 95,25 95,75 50,98 5,75 5,25"
+                fill="none"
+                stroke="url(#hexGradient)"
                 strokeWidth="4"
               />
-              <text 
-                x="50" 
-                y="62" 
-                textAnchor="middle" 
-                fill="url(#hexGradient)" 
-                fontSize="42" 
+              <text
+                x="50"
+                y="62"
+                textAnchor="middle"
+                fill="url(#hexGradient)"
+                fontSize="42"
                 fontWeight="bold"
                 fontFamily="Arial, sans-serif"
               >
@@ -58,7 +58,7 @@ const Navbar = () => {
             </svg>
           </div>
           <p className="text-white text-base font-bold cursor-pointer">
-            Le Khanh Duc
+            Doan Tran Quang Huy
           </p>
         </a>
 
@@ -66,9 +66,8 @@ const Navbar = () => {
           {navLinks.map((link) => (
             <li
               key={link.id}
-              className={`${
-                active === link.title ? "text-white" : "text-secondary"
-              } hover:text-white text-sm font-medium cursor-pointer transition-colors`}
+              className={`${active === link.title ? "text-white" : "text-secondary"
+                } hover:text-white text-sm font-medium cursor-pointer transition-colors`}
               onClick={() => setActive(link.title)}
             >
               <a href={`#${link.id}`} className="flex items-center gap-2">
@@ -149,17 +148,15 @@ const Navbar = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: toggle ? 1 : 0, scale: toggle ? 1 : 0.8 }}
-            className={`${
-              !toggle ? "hidden" : "flex"
-            } p-5 bg-black-200 absolute top-16 right-4 min-w-[140px] z-10 rounded-xl border border-primary/20`}
+            className={`${!toggle ? "hidden" : "flex"
+              } p-5 bg-black-200 absolute top-16 right-4 min-w-[140px] z-10 rounded-xl border border-primary/20`}
           >
             <ul className="list-none flex flex-col gap-3">
               {navLinks.map((link) => (
                 <li
                   key={link.id}
-                  className={`${
-                    active === link.title ? "text-white" : "text-secondary"
-                  } text-sm font-medium cursor-pointer`}
+                  className={`${active === link.title ? "text-white" : "text-secondary"
+                    } text-sm font-medium cursor-pointer`}
                   onClick={() => {
                     setToggle(false);
                     setActive(link.title);

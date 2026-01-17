@@ -11,11 +11,10 @@ const Toast = ({ message, type, onClose }: { message: string; type: "success" | 
       initial={{ opacity: 0, y: -50, x: "-50%" }}
       animate={{ opacity: 1, y: 0, x: "-50%" }}
       exit={{ opacity: 0, y: -50, x: "-50%" }}
-      className={`fixed top-24 left-1/2 z-50 px-6 py-4 rounded-xl shadow-2xl flex items-center gap-3 ${
-        type === "success" 
-          ? "bg-green-500/90 text-white" 
+      className={`fixed top-24 left-1/2 z-50 px-6 py-4 rounded-xl shadow-2xl flex items-center gap-3 ${type === "success"
+          ? "bg-green-500/90 text-white"
           : "bg-red-500/90 text-white"
-      }`}
+        }`}
     >
       {type === "success" ? (
         <FaCheckCircle className="text-xl" />
@@ -39,7 +38,7 @@ const Contact = () => {
     message: "",
     type: "success"
   });
-  
+
   const titleClass = theme === "dark" ? "text-white" : "text-slate-800";
   const labelClass = theme === "dark" ? "text-white-100" : "text-slate-700";
   const inputBgClass = theme === "dark" ? "bg-tertiary/30" : "bg-white";
@@ -58,8 +57,8 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    const serviceId = "service_2tyggw9"; 
-    const templateId = "template_rp4axkc"; 
+    const serviceId = "service_2tyggw9";
+    const templateId = "template_rp4axkc";
     const publicKey = "zaxJqvfEmlAbFArdF";
 
     const templateParams = {
@@ -87,10 +86,10 @@ const Contact = () => {
       {/* Toast Notification */}
       <AnimatePresence>
         {toast.show && (
-          <Toast 
-            message={toast.message} 
-            type={toast.type} 
-            onClose={() => setToast({ ...toast, show: false })} 
+          <Toast
+            message={toast.message}
+            type={toast.type}
+            onClose={() => setToast({ ...toast, show: false })}
           />
         )}
       </AnimatePresence>
@@ -122,8 +121,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-xs text-secondary mb-0.5">Email</p>
-                  <a href="mailto:lekhanhduc212003@gmail.com" className={`text-sm hover:text-primary transition-colors ${labelClass}`}>
-                    lekhanhduc212003@gmail.com
+                  <a href="mailto:huydoan1652004@gmail.com" className={`text-sm hover:text-primary transition-colors ${labelClass}`}>
+                    huydoan1652004@gmail.com
                   </a>
                 </div>
               </div>
